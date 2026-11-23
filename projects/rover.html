@@ -36,29 +36,51 @@
     <div class="prose">
       <h2>Key Specifications</h2>
       <table class="specs">
-        <tr><th>Airflow &amp; Collection</th><td>Centrifugal resuspension fan + 2× gas diaphragm pumps</td></tr>
+        <tr><th>Airflow &amp; Collection</th><td>Centrifugal resuspension fan + 2× gas diaphragm pumps regulated using mass flow controllers at 5L/min</td></tr>
         <tr><th>Filtration</th><td>2× PM2.5 cyclone separators onto PTFE TE37 1 µm (25 mm) filters</td></tr>
         <tr><th>Particulate Sensor</th><td>AlphaSense OPC-N3 supported by Raspberry Pi</td></tr>
         <tr><th>Vision &amp; Telemetry</th><td>GoPro HERO7 Silver (road surface imaging, GPS &amp; velocity)</td></tr>
         <tr><th>Drivetrain &amp; Power</th><td>4 all-terrain drive wheels + 2 castor wheels; 18V DeWalt battery</td></tr>
       </table>
 
-      <h2>The Problem</h2>
+      <h2>Design Significance</h2>
       <p>
-        Non-exhaust emissions (brake, tire, and road wear particles) represent a growing share of urban particulate matter, yet spatial sampling across road surfaces traditionally requires bulky stationary setups or full-sized test vehicles. The Environmental Research Group needed a compact, remote-operated rover capable of repeatable mobile resuspension and filter collection.
+        As more regulations on exhaust emissions come into effect, non-exhaust emissions (brake, tire, and road wear particles) make up a growing share of urban particulate matter. Sampling methods include temporal sampling using stationary observatories near traffic-heavy intersections, or spatial sampling across road surfaces. The latter traditionally requires bulky and power-intense setups or full-sized test vehicles. The Environmental Research Group needed a compact, remote-operated rover capable of repeatable mobile resuspension and filter collection.
       </p>
 
-      <h2>System Architecture &amp; Integration</h2>
+      <h2>Major Design Considerations</h2>
       <ul>
-        <li><strong>Modular Mechanical Architecture:</strong> Partitioned the system into three serviceable assemblies—a motorized drive base (coupled via seven mechanical connection points), a main environmental apparatus frame, and an adjustable-height sampling box with castor wheels.</li>
-        <li><strong>Dual-Channel Aerosol Sampling:</strong> Integrated a centrifugal fan to resuspend surface particulate matter alongside two parallel gas diaphragm pump lines fitted with PM2.5 cyclone separators and 25 mm PTFE TE37 membrane filters.</li>
-        <li><strong>Telemetry &amp; Sensing Suite:</strong> Synchronized optical particle concentration logging (AlphaSense OPC-N3 via Raspberry Pi) with downward/forward road surface video imaging, GPS coordinates, and velocity telemetry from an onboard GoPro HERO7 Silver.</li>
+        <li><strong>Dynamic Clearance:</strong> Configurable front castor wheel height allows for the sampling box to remain as close to the ground as possible to maximize sampling efficiency, while maintaining adaptability to field conditions such as debris on road surfaces by lowering the wheels and thus increasing clearance.</li>
+        <li><strong>Design for Servicability:</strong> Frequently interacted components are easy to access, such as the fan &amp; pump batteries, the sample holders. and the height adjustment of the castor wheels.</li>
+        <li><strong>Dual-Channel Aerosol Sampling:</strong> Two identical and independent gas diaphragm pump lines fitted with PM2.5 cyclone separators and 25 mm PTFE TE37 membrane filters allows for collection of two functionally identical samples for lab analysis. This enables some more destructive analysis methods, such as elemental composition analysis using an XACT XRF monitor.</li>
+        <li><strong>Telemetry &amp; Sensing Suite:</strong> High time-resolution optical particle concentration logging (AlphaSense OPC-N3 via Raspberry Pi) with downward/forward road surface video imaging, GPS coordinates, and velocity telemetry from an onboard GoPro HERO7 Silver.</li>
       </ul>
 
-      <h2>Validation &amp; Documentation</h2>
+      <h2>Field Documentation &amp; Manual</h2>
       <p>
-        Executed initial field trial runs and gravimetric filter weighing in Imperial College London's calibrated weigh room. Authored the comprehensive <em>ERG Surface Sampling ROVER Manual</em>, documenting subsystem layouts, pre/mid/post-operation checklists, and castor height calibration in accessible terminology for future researchers.
+        Executed initial field trial runs and gravimetric filter weighing in Imperial College London's calibrated weigh room. You can view or download the complete technical reference manual below:
       </p>
+      <p>
+        <a class="btn primary" href="../ROVER%20Manual_compressed.pdf" target="_blank" rel="noopener">📄 View ERG Surface Sampling ROVER Manual (PDF)</a>
+      </p>
+
+      <h2>ROVER in the Field</h2>
+      <p>Watch footage of the ROVER deployed in testing, demonstrating mobile dust resuspension and telemetry capture:</p>
+      
+      <!-- Embedded Video Container -->
+      <div class="video-container" style="position: relative; width: 100%; aspect-ratio: 16/9; background: var(--line); border-radius: 4px; overflow: hidden; margin: 24px 0;">
+        <!-- Option A: If using YouTube, replace the src below with your YouTube embed link -->
+        <!--
+        <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/YOUR_VIDEO_ID" title="ROVER in the Field" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0;"></iframe>
+        -->
+        <!-- Option B: If hosting a local video file (e.g. mp4) inside an assets or videos folder, comment out the iframe above and uncomment below: -->
+         
+        <video controls width="100%" height="100%" style="object-fit: cover;">
+          <source src="../images/rover-field-test.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video> 
+        
+      </div>
 
       <div class="gallery">
         <figure>
