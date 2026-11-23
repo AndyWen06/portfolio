@@ -28,11 +28,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # 1. MAKE SURE YOU HAVE THIS STEP TO UPLOAD YOUR SITE FILES
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: '.' # Points to your root directory containing index.html, style.css, projects/, etc.
   # Single deploy job since we're just deploying
   deploy:
     environment:
