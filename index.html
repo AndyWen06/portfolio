@@ -30,6 +30,7 @@
     <p class="lede">
       Hi, I'm <strong>Andy Wen</strong>, a Robotics Engineering undergraduate (AI Engineering Minor, 3.89 cGPA) at the University of Toronto.
       I work across mechanical CAD/FEA, electrical harnessing, PCB design, and embedded integration—from environmental sampling rovers to Formula SAE race cars.
+      I value creating good designs grounded in real-world manufacturing and communicating my ideas clearly and concisely.
     </p>
     <a class="btn primary" href="#projects">View projects</a>
     <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download résumé</a>
@@ -43,7 +44,23 @@
 
       <div class="projects">
 
-        <!-- Project 1: ROVER -->
+        <!-- Project 1: UTFR -->
+        <a class="card" href="projects/utfr.html">
+          <div class="thumb placeholder">[ add images/utfr-thumb.jpg ]</div>
+          <div class="card-body">
+            <span class="meta">2025 – Present · U of T Formula Racing</span>
+            <h3>FSAE Chassis FEA &amp; Electrical Harnessing</h3>
+            <p>Parameterized 50+ chassis wireframe coordinates in CATIA, ran multi-load FEA on 1020 steel bellcrank tabs, and built FSAE-compliant front main wire harnesses.</p>
+            <div class="tags">
+              <span class="tag">3DX CATIA</span>
+              <span class="tag">FEA</span>
+              <span class="tag">RapidHarness</span>
+              <span class="tag">Altium</span>
+            </div>
+          </div>
+        </a>
+        
+        <!-- Project 2: ROVER -->
         <a class="card" href="projects/rover.html">
           <div class="thumb placeholder">[ add images/rover-thumb.jpg ]</div>
           <div class="card-body">
@@ -59,23 +76,22 @@
           </div>
         </a>
 
-        <!-- Project 2: UTFR -->
-        <a class="card" href="projects/utfr.html">
-          <div class="thumb placeholder">[ add images/utfr-thumb.jpg ]</div>
+        <!-- Project 3: PCB Design -->
+        <a class="card" href="projects/lowpass-filter.html">
+          <div class="thumb placeholder">[ add images/pcb-thumb.jpg ]</div>
           <div class="card-body">
-            <span class="meta">2025 – Present · U of T Formula Racing</span>
-            <h3>FSAE Chassis FEA &amp; Electrical Harnessing</h3>
-            <p>Parameterized 50+ chassis wireframe coordinates in CATIA, ran multi-load FEA on 1020 steel bellcrank tabs, and built FSAE-compliant front main wire harnesses.</p>
+            <span class="meta">2026 · Electronics for Robotics</span>
+            <h3>Current Sense Amp &amp; 5th-Order Filter PCB</h3>
+            <p>Designed and routed a compact 50×50 mm 2-layer PCB combining a current-sense amplifier with a 3-stage, 1 kHz Butterworth-Bessel low-pass filter.</p>
             <div class="tags">
-              <span class="tag">3DX CATIA</span>
-              <span class="tag">FEA</span>
-              <span class="tag">RapidHarness</span>
-              <span class="tag">Altium</span>
+              <span class="tag">Altium Designer</span>
+              <span class="tag">Analog Filters</span>
+              <span class="tag">PCB Layout</span>
             </div>
           </div>
         </a>
-
-        <!-- Project 3: Solar Panel Cleaner -->
+        
+        <!-- Project 4: Solar Panel Cleaner -->
         <a class="card" href="projects/solar-cleaner.html">
           <div class="thumb placeholder">[ add images/solar-thumb.jpg ]</div>
           <div class="card-body">
@@ -90,21 +106,6 @@
           </div>
         </a>
 
-        <!-- Project 4: PCB Design -->
-        <a class="card" href="projects/lowpass-filter.html">
-          <div class="thumb placeholder">[ add images/pcb-thumb.jpg ]</div>
-          <div class="card-body">
-            <span class="meta">2026 · Electronics for Robotics</span>
-            <h3>Current Sense Amp &amp; 5th-Order Filter PCB</h3>
-            <p>Designed and routed a compact 50×50 mm 2-layer PCB combining a current-sense amplifier with a 3-stage, 1 kHz Butterworth-Bessel low-pass filter.</p>
-            <div class="tags">
-              <span class="tag">Altium Designer</span>
-              <span class="tag">Analog Filters</span>
-              <span class="tag">PCB Layout</span>
-            </div>
-          </div>
-        </a>
-
       </div>
     </div>
   </section>
@@ -115,20 +116,7 @@
       <p class="section-label">Track record</p>
       <h2>Experience &amp; Education</h2>
 
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-head">
-            <h3>Imperial College London — Research Exchange Student</h3>
-            <span class="meta">May 2026 – Aug. 2026 · London, UK</span>
-          </div>
-          <p class="role-sub">Hardware Integration &amp; Robotics (Environmental Research Group)</p>
-          <ul>
-            <li>Designed and integrated the Remote Operated Vacuum for Environmental Research (ROVER) for compact mobile sampling of non-exhaust emissions.</li>
-            <li>Combined dual cyclone filter sampling, GoPro HERO7 Silver road imaging/GPS telemetry, and an AlphaSense OPC-N3 particle sensor on Raspberry Pi.</li>
-            <li>Authored the complete technical specification and plain-language operation manual for field researchers.</li>
-          </ul>
-        </div>
-
+      <div class="timeline">      
         <div class="timeline-item">
           <div class="timeline-head">
             <h3>University of Toronto Formula Racing (UTFR)</h3>
@@ -139,6 +127,19 @@
             <li>Optimized chassis structural mount tabs via 3DX CATIA FEA across impulse and heave load cases; parameterized 50+ wireframe coordinates using CATIA Design Tables.</li>
             <li>Machined torsional test rigs to empirically validate chassis stiffness and boundary conditions.</li>
             <li>Developed front main harness schematics and physical routing in RapidHarness, executing precision crimping and connector assembly to FSAE safety standards.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-head">
+            <h3>Imperial College London — Research Exchange Student</h3>
+            <span class="meta">May 2026 – Aug. 2026 · London, UK</span>
+          </div>
+          <p class="role-sub">Hardware Integration &amp; Robotics (Environmental Research Group)</p>
+          <ul>
+            <li>Designed and integrated the Remote Operated Vacuum for Environmental Research (ROVER) for compact mobile sampling of non-exhaust emissions.</li>
+            <li>Combined dual cyclone filter sampling, GoPro HERO7 Silver road imaging/GPS telemetry, and an AlphaSense OPC-N3 particle sensor on Raspberry Pi.</li>
+            <li>Authored the complete technical specification and plain-language operation manual for field researchers.</li>
           </ul>
         </div>
 
@@ -164,7 +165,7 @@
           I am a Robotics Engineering student at the University of Toronto pursuing a minor in AI Engineering. My work centers on bridging mechanical design and embedded electronics—turning CAD models and circuit schematics into tested, physical hardware.
         </p>
         <p>
-          Whether running structural finite element simulations for a Formula SAE chassis, routing analog filter PCBs, or integrating sensor suites onto field robots, I enjoy end-to-end engineering where simulation meets physical validation.
+          More than just theoretical simulations and designing, I value end-to-end engineering where simulation meets physical validation. It's one thing to design a part that works in theory, but another to realize it under manufacturing and other constraints. I care about DfX, as well as communicating my designs clearly and concisely through good engineering documentation.
         </p>
       </div>
       <div>
