@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Automated Solar Panel Cleaning Mechanism | Andy Wen</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="../index.html">andy<span>.</span>wen</a>
+    <nav>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap project-hero">
+    <a class="back" href="../index.html#projects">← All projects</a>
+    <p class="eyebrow" style="margin-top:24px">Feb – Apr 2026 · Praxis Engineering Design · Mechanical Integration Lead</p>
+    <h1>Automated Solar Panel Cleaning Mechanism</h1>
+    <p class="lede" style="color:var(--ink-soft);max-width:64ch">
+      An electro-mechanical sweeping and extending brush system designed to mitigate dust accumulation on residential solar panels in North Africa without water consumption.
+    </p>
+  </div>
+
+  <div class="wrap">
+    <div class="thumb placeholder" style="border-radius:4px">[ hero image: ../images/solar-cad-hero.jpg ]</div>
+
+    <div class="prose">
+      <h2>Key Specifications</h2>
+      <table class="specs">
+        <tr><th>Measured Performance</th><td>82% dust removal efficiency across test panel</td></tr>
+        <tr><th>Actuation</th><td>NEMA 17 Stepper Motor (lead screw extension) + MG996R Servo (180° sweep)</td></tr>
+        <tr><th>Control Electronics</th><td>Raspberry Pi Pico + DRV8833 motor driver</td></tr>
+        <tr><th>Test Panel Dimensions</th><td>498 mm × 299 mm scaled test bed</td></tr>
+        <tr><th>CAD &amp; Fabrication</th><td>Autodesk Fusion, 3D-printed custom housings &amp; couplers</td></tr>
+      </table>
+
+      <h2>The Problem</h2>
+      <p>
+        In arid residential regions such as North Africa, heavy dust accumulation significantly degrades photovoltaic power output, while water scarcity makes wet washing impractical. Our team designed a dry, automated morning-cycle brush mechanism capable of full rectangular panel coverage from a single corner mount.
+      </p>
+
+      <h2>Mechanical Design &amp; Integration</h2>
+      <ul>
+        <li><strong>Simultaneous Polar-Linear Kinematics:</strong> Combined a 180° rotational sweep (MG996R servo) with a telescoping lead-screw extension arm (NEMA 17 stepper + shaft coupler + lead nut) so a soft nylon brush reaches the corners of a rectangular panel.</li>
+        <li><strong>Enclosure &amp; Packaging:</strong> Designed custom multi-part stepper and servo housings in Autodesk Fusion with verified tolerances to protect drive components while minimizing panel shading.</li>
+        <li><strong>Verification &amp; Testing:</strong> Passed 17 of 22 engineering specifications during physical prototype testing, validating coordinated 180° sweep kinematics and achieving 82% particulate removal efficiency.</li>
+      </ul>
+
+      <div class="gallery">
+        <figure>
+          <div class="thumb placeholder">[ ../images/solar-cad.jpg ]</div>
+          <figcaption>Fig. 1: Autodesk Fusion assembly showing lead-screw &amp; servo housings</figcaption>
+        </figure>
+        <figure>
+          <div class="thumb placeholder">[ ../images/solar-proto.jpg ]</div>
+          <figcaption>Fig. 2: Integrated physical prototype on test panel</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap"><p>© 2026 Andy Wen</p></div>
+</footer>
+
+</body>
+</html>
