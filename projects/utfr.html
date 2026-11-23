@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UTFR Chassis FEA &amp; Electrical Harnessing | Andy Wen</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="../index.html">andy<span>.</span>wen</a>
+    <nav>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap project-hero">
+    <a class="back" href="../index.html#projects">← All projects</a>
+    <p class="eyebrow" style="margin-top:24px">Oct 2025 – Present · University of Toronto Formula Racing</p>
+    <h1>FSAE Chassis FEA &amp; Electrical Harnessing</h1>
+    <p class="lede" style="color:var(--ink-soft);max-width:64ch">
+      Structural finite element optimization of rear bellcrank suspension mount tabs, parametric chassis wireframe automation, and FSAE-compliant front main wire harness integration.
+    </p>
+  </div>
+
+  <div class="wrap">
+    <div class="thumb placeholder" style="border-radius:4px">[ hero image: ../images/utfr-fea-hero.jpg ]</div>
+
+    <div class="prose">
+      <h2>Key Specifications</h2>
+      <table class="specs">
+        <tr><th>CAD &amp; FEA Environment</th><td>3DX CATIA (Generative Structural Analysis &amp; Design Tables)</td></tr>
+        <tr><th>Materials Modeled</th><td>1020 Steel (Mount Tabs) &amp; 6061 Aluminum Alloy (Bellcrank)</td></tr>
+        <tr><th>Mesh Refinement</th><td>1 mm tab mesh (0.5 mm around bolt holes), ≥4 elements through thickness</td></tr>
+        <tr><th>Electrical Tools</th><td>RapidHarness, Altium Designer, Deutsch/Molex FSAE connectors</td></tr>
+      </table>
+
+      <h2>Chassis Subsystem: Bellcrank Mount Tab Optimization</h2>
+      <p>
+        Suspension pushrod loads transfer directly into the chassis through welded 1020 steel bellcrank tabs. Using 3DX CATIA, I built a coupled finite element model incorporating the rear-left bellcrank (6061 Aluminum), dual mounting tabs, and remote pushrod load couplings across peak impulse and heave load cases.
+      </p>
+      <ul>
+        <li><strong>Iterative Solver Debugging (V1–V7):</strong> Progressed through seven simulation revisions—resolving N·mm unit scaling, comparing rigid vs. deformable virtual bolts, refining local hole mesh sag to 0.5 mm, and widening the forward tab geometry to reduce peak von Mises stress concentrations.</li>
+        <li><strong>Parametric Wireframe Automation:</strong> Implemented CATIA Design Tables to drive 50+ structural chassis wireframe coordinates, cutting geometry update turnaround times across design iterations.</li>
+        <li><strong>Physical Validation:</strong> Machined torsional test rig fixtures to empirically measure previous-year chassis torsional stiffness and validate simulation boundary conditions.</li>
+      </ul>
+
+      <h2>Electrical Subsystem: Front Main Harness</h2>
+      <p>
+        Prior to joining Chassis, I authored complete electrical schematics and physical routing drawings for the vehicle's front main harness in RapidHarness, followed by hands-on wire preparation, terminal crimping, and strain-relieved connector assembly compliant with FSAE rules.
+      </p>
+
+      <div class="gallery">
+        <figure>
+          <div class="thumb placeholder">[ ../images/utfr-mesh.jpg ]</div>
+          <figcaption>Fig. 1: Refined FEM mesh around bellcrank tab holes</figcaption>
+        </figure>
+        <figure>
+          <div class="thumb placeholder">[ ../images/utfr-stress.jpg ]</div>
+          <figcaption>Fig. 2: Von Mises stress &amp; displacement under impulse load</figcaption>
+        </figure>
+        <figure>
+          <div class="thumb placeholder">[ ../images/utfr-harness.jpg ]</div>
+          <figcaption>Fig. 3: Front main harness routing schematic</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap"><p>© 2026 Andy Wen</p></div>
+</footer>
+
+</body>
+</html>
