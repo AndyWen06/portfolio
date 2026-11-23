@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name | Engineering Portfolio</title>
-  <meta name="description" content="Engineering portfolio of Your Name: mechanical design, embedded systems, and hardware projects.">
+  <title>Andy Wen | Robotics Engineering Portfolio</title>
+  <meta name="description" content="Engineering portfolio of Andy Wen: Robotics Engineering & AI Minor at the University of Toronto. Mechanical design, FEA, electrical systems, and robotics.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="site-header">
   <div class="wrap">
-    <a class="logo" href="#top">your<span>.</span>name</a>
+    <a class="logo" href="#top">andy<span>.</span>wen</a>
     <nav>
       <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -24,15 +25,14 @@
 
   <!-- ===== HERO ===== -->
   <div class="wrap hero">
-    <p class="eyebrow">Engineering Portfolio</p>
-    <h1>I design and build things that work.</h1>
+    <p class="eyebrow">Robotics Engineering · University of Toronto</p>
+    <h1>I design and build robotic &amp; mechanical systems.</h1>
     <p class="lede">
-      Hi, I'm <strong>Your Name</strong>, a [your discipline] engineering student/graduate
-      focused on [your interests: e.g. mechanical design, robotics, embedded systems].
-      Below is a selection of projects with the design decisions, analysis, and results behind them.
+      Hi, I'm <strong>Andy Wen</strong>, a Robotics Engineering undergraduate (AI Engineering Minor, 3.89 cGPA) at the University of Toronto.
+      I work across mechanical CAD/FEA, electrical harnessing, PCB design, and embedded integration—from environmental sampling rovers to Formula SAE race cars.
     </p>
     <a class="btn primary" href="#projects">View projects</a>
-    <a class="btn" href="resume.pdf">Download résumé</a>
+    <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download résumé</a>
   </div>
 
   <!-- ===== PROJECTS ===== -->
@@ -43,49 +43,113 @@
 
       <div class="projects">
 
-        <!-- Copy this whole <a class="card"> block for each new project -->
-        <a class="card" href="project.html">
-          <div class="thumb placeholder">[ add images/project1.jpg ]</div>
+        <!-- Project 1: ROVER -->
+        <a class="card" href="projects/rover.html">
+          <div class="thumb placeholder">[ add images/rover-thumb.jpg ]</div>
           <div class="card-body">
-            <span class="meta">2026 · Team of 4</span>
-            <h3>Project Title One</h3>
-            <p>One or two sentences: the problem, your role, and the headline result (e.g. "reduced weight by 22%").</p>
+            <span class="meta">2026 · Imperial College London</span>
+            <h3>ERG Surface Sampling ROVER</h3>
+            <p>Remote-operated mobile sampling platform for non-exhaust road emissions, integrating dual PM2.5 cyclones, OPC-N3 sensing, and GoPro GPS/velocity telemetry.</p>
             <div class="tags">
-              <span class="tag">SolidWorks</span>
+              <span class="tag">Robotics Integration</span>
+              <span class="tag">Raspberry Pi</span>
+              <span class="tag">Telemetry</span>
+              <span class="tag">Documentation</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 2: UTFR -->
+        <a class="card" href="projects/utfr.html">
+          <div class="thumb placeholder">[ add images/utfr-thumb.jpg ]</div>
+          <div class="card-body">
+            <span class="meta">2025 – Present · U of T Formula Racing</span>
+            <h3>FSAE Chassis FEA &amp; Electrical Harnessing</h3>
+            <p>Parameterized 50+ chassis wireframe coordinates in CATIA, ran multi-load FEA on 1020 steel bellcrank tabs, and built FSAE-compliant front main wire harnesses.</p>
+            <div class="tags">
+              <span class="tag">3DX CATIA</span>
               <span class="tag">FEA</span>
-              <span class="tag">3D Printing</span>
+              <span class="tag">RapidHarness</span>
+              <span class="tag">Altium</span>
             </div>
           </div>
         </a>
 
-        <a class="card" href="project.html">
-          <div class="thumb placeholder">[ add images/project2.jpg ]</div>
+        <!-- Project 3: Solar Panel Cleaner -->
+        <a class="card" href="projects/solar-cleaner.html">
+          <div class="thumb placeholder">[ add images/solar-thumb.jpg ]</div>
           <div class="card-body">
-            <span class="meta">2025 · Solo</span>
-            <h3>Project Title Two</h3>
-            <p>Short summary of what you built and why it matters.</p>
+            <span class="meta">2026 · Praxis Engineering Design</span>
+            <h3>Automated Solar Panel Cleaning Mechanism</h3>
+            <p>Led mechanical packaging and enclosure design for an electro-mechanical sweeping mechanism achieving 82% dust-removal efficiency across residential solar panels.</p>
             <div class="tags">
-              <span class="tag">Arduino</span>
-              <span class="tag">PCB Design</span>
-              <span class="tag">C++</span>
+              <span class="tag">Autodesk Fusion</span>
+              <span class="tag">Mechatronics</span>
+              <span class="tag">Prototyping</span>
             </div>
           </div>
         </a>
 
-        <a class="card" href="project.html">
-          <div class="thumb placeholder">[ add images/project3.jpg ]</div>
+        <!-- Project 4: PCB Design -->
+        <a class="card" href="projects/pcb-design.html">
+          <div class="thumb placeholder">[ add images/pcb-thumb.jpg ]</div>
           <div class="card-body">
-            <span class="meta">2025 · Capstone</span>
-            <h3>Project Title Three</h3>
-            <p>Short summary of what you built and why it matters.</p>
+            <span class="meta">2026 · Electronics for Robotics</span>
+            <h3>Current Sense Amp &amp; 5th-Order Filter PCB</h3>
+            <p>Designed and routed a compact 50×50 mm 2-layer PCB combining a current-sense amplifier with a 3-stage, 1 kHz Butterworth-Bessel low-pass filter.</p>
             <div class="tags">
-              <span class="tag">MATLAB</span>
-              <span class="tag">Controls</span>
-              <span class="tag">Python</span>
+              <span class="tag">Altium Designer</span>
+              <span class="tag">Analog Filters</span>
+              <span class="tag">PCB Layout</span>
             </div>
           </div>
         </a>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience">
+    <div class="wrap">
+      <p class="section-label">Track record</p>
+      <h2>Experience &amp; Education</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-head">
+            <h3>Imperial College London — Research Exchange Student</h3>
+            <span class="meta">May 2026 – Aug. 2026 · London, UK</span>
+          </div>
+          <p class="role-sub">Hardware Integration &amp; Robotics (Environmental Research Group)</p>
+          <ul>
+            <li>Designed and integrated the Remote Operated Vacuum for Environmental Research (ROVER) for compact mobile sampling of non-exhaust emissions.</li>
+            <li>Combined dual cyclone filter sampling, GoPro HERO7 Silver road imaging/GPS telemetry, and an AlphaSense OPC-N3 particle sensor on Raspberry Pi.</li>
+            <li>Authored the complete technical specification and plain-language operation manual for field researchers.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-head">
+            <h3>University of Toronto Formula Racing (UTFR)</h3>
+            <span class="meta">Oct. 2025 – Present · Toronto, ON</span>
+          </div>
+          <p class="role-sub">Chassis Subsystem Member (Apr. 2026 – Present) &amp; Electrical Subsystem Member (Oct. 2025 – Mar. 2026)</p>
+          <ul>
+            <li>Optimized chassis structural mount tabs via 3DX CATIA FEA across impulse and heave load cases; parameterized 50+ wireframe coordinates using CATIA Design Tables.</li>
+            <li>Machined torsional test rigs to empirically validate chassis stiffness and boundary conditions.</li>
+            <li>Developed front main harness schematics and physical routing in RapidHarness, executing precision crimping and connector assembly to FSAE safety standards.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-head">
+            <h3>University of Toronto — BASc in Robotics Engineering</h3>
+            <span class="meta">Sep. 2024 – Present · cGPA: 3.89</span>
+          </div>
+          <p class="role-sub">Minor in Artificial Intelligence Engineering</p>
+          <p class="coursework"><strong>Relevant Coursework:</strong> Structures &amp; Materials, Dynamics, Control Systems, Electronics for Robotics, Vector Calculus, Ordinary Differential Equations, Electrical Circuits, Computer Algorithms &amp; Data Structures.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -97,22 +161,21 @@
         <p class="section-label">About</p>
         <h2>Background</h2>
         <p>
-          Write 2-3 short paragraphs here: where you study or work, what kind of engineering
-          problems you enjoy, and what you're looking for next (internships, full-time roles, collaborations).
+          I am a Robotics Engineering student at the University of Toronto pursuing a minor in AI Engineering. My work centers on bridging mechanical design and embedded electronics—turning CAD models and circuit schematics into tested, physical hardware.
         </p>
         <p>
-          Outside of engineering I [hobby or two]. Hobby projects are fair game for a portfolio too.
+          Whether running structural finite element simulations for a Formula SAE chassis, routing analog filter PCBs, or integrating sensor suites onto field robots, I enjoy end-to-end engineering where simulation meets physical validation.
         </p>
       </div>
       <div>
         <p class="section-label">Toolbox</p>
         <h2>Skills</h2>
         <ul class="skills">
-          <li><span>CAD</span><span>SolidWorks, Fusion 360</span></li>
-          <li><span>Analysis</span><span>ANSYS, MATLAB</span></li>
-          <li><span>Programming</span><span>Python, C/C++</span></li>
-          <li><span>Electronics</span><span>KiCad, Arduino</span></li>
-          <li><span>Fabrication</span><span>3D printing, machining</span></li>
+          <li><span>CAD &amp; Sim</span><span>3DX CATIA, Fusion, FEA, LTspice</span></li>
+          <li><span>Electronics</span><span>Altium, RapidHarness, PCB Layout</span></li>
+          <li><span>Fabrication</span><span>Machining, Rapid Prototyping, DFM</span></li>
+          <li><span>Code &amp; Tools</span><span>Python, MATLAB, R, SystemVerilog</span></li>
+          <li><span>Workflow</span><span>Design Tables, Technical Manuals</span></li>
         </ul>
       </div>
     </div>
@@ -125,11 +188,12 @@
   <div class="wrap">
     <p class="section-label">Contact</p>
     <p class="contact-links">
-      <a href="mailto:you@example.com">you@example.com</a>
-      <a href="https://www.linkedin.com/in/your-handle">LinkedIn</a>
-      <a href="https://github.com/your-username">GitHub</a>
+      <a href="mailto:andy.wen@mail.utoronto.ca">andy.wen@mail.utoronto.ca</a>
+      <a href="tel:+19053253776">+1 905-325-3776</a>
+      <a href="https://www.linkedin.com/in/yihan-wen" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/AndyWen06" target="_blank" rel="noopener">GitHub</a>
     </p>
-    <p>© 2026 Your Name</p>
+    <p>© 2026 Andy Wen</p>
   </div>
 </footer>
 
