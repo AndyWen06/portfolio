@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Current Sense Amplifier &amp; Low-Pass Filter PCB | Andy Wen</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="../index.html">andy<span>.</span>wen</a>
+    <nav>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap project-hero">
+    <a class="back" href="../index.html#projects">← All projects</a>
+    <p class="eyebrow" style="margin-top:24px">2026 · Electronics for Robotics · Altium Designer</p>
+    <h1>Current Sense Amp &amp; 5th-Order Low-Pass Filter PCB</h1>
+    <p class="lede" style="color:var(--ink-soft);max-width:64ch">
+      A compact 50 mm × 50 mm two-layer printed circuit board integrating an analog current-sense amplifier and a 3-stage Butterworth-Bessel anti-aliasing filter on a single LM324 quad op-amp.
+    </p>
+  </div>
+
+  <div class="wrap">
+    <div class="thumb placeholder" style="border-radius:4px">[ hero image: ../images/pcb-3d-hero.jpg ]</div>
+
+    <div class="prose">
+      <h2>Key Specifications</h2>
+      <table class="specs">
+        <tr><th>Board Dimensions</th><td>50 mm × 50 mm (2-layer copper + silkscreen, 4× M3 mounting holes)</td></tr>
+        <tr><th>Active IC</th><td>Single LM324 Quad Op-Amp (1 stage sense amp + 3 stages filter)</td></tr>
+        <tr><th>Filter Topology</th><td>5th-Order Butterworth-Bessel 0.95 (1 buffered RC + 2 Sallen-Key stages)</td></tr>
+        <tr><th>Frequency Response</th><td>1 kHz cutoff (-0.1 dB passband flatness), -38.9 dB attenuation at 5 kHz</td></tr>
+        <tr><th>Supply &amp; Sensing</th><td>+19V single supply, onboard 0.1 Ω shunt resistor, 5-pin I/O header</td></tr>
+      </table>
+
+      <h2>Circuit &amp; PCB Design</h2>
+      <ul>
+        <li><strong>Single-IC Architecture:</strong> Consolidated both the current-sense amplifier stage (DA1) and the 3-stage active low-pass filter (DA2) onto all four op-amp channels of a single LM324 package to minimize board footprint.</li>
+        <li><strong>Filter Synthesis:</strong> Designed a 5th-order Butterworth-Bessel (0.95) response using standard 5% E24 resistor values, achieving flat passband gain through 1 kHz while exceeding the 35 dB attenuation target at 5 kHz (-38.9 dB simulated).</li>
+        <li><strong>Layout &amp; DFM:</strong> Routed top and bottom copper layers in Altium Designer with dedicated off-board header pins (<code>ISENSE</code>, <code>VOUT1</code>, <code>VOUT2</code>, <code>+19V</code>, <code>GND</code>) and four corner M3 mounting holes.</li>
+      </ul>
+
+      <div class="gallery">
+        <figure>
+          <div class="thumb placeholder">[ ../images/pcb-schematic.jpg ]</div>
+          <figcaption>Fig. 1: Altium schematic of DA1 current sense amp &amp; DA2 filter</figcaption>
+        </figure>
+        <figure>
+          <div class="thumb placeholder">[ ../images/pcb-top.jpg ]</div>
+          <figcaption>Fig. 2: Top copper layer and component silkscreen</figcaption>
+        </figure>
+        <figure>
+          <div class="thumb placeholder">[ ../images/pcb-bottom.jpg ]</div>
+          <figcaption>Fig. 3: Bottom copper routing and ground plane</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap"><p>© 2026 Andy Wen</p></div>
+</footer>
+
+</body>
+</html>
