@@ -31,7 +31,7 @@
   </div>
 
   <div class="wrap">
-    <div class="thumb placeholder" style="border-radius:4px">[ hero image: ../images/solar-cad-hero.jpg ]</div>
+    <div class="thumb" style="border-radius:4px"><img src="../media/solar/images/cad.jpg" alt="Image of the brush CAD in 3 different perspectives"></div>
 
     <div class="prose">
       <h2>Key Specifications</h2>
@@ -39,30 +39,38 @@
         <tr><th>Measured Performance</th><td>82% dust removal efficiency across test panel</td></tr>
         <tr><th>Actuation</th><td>NEMA 17 Stepper Motor (lead screw extension) + MG996R Servo (180° sweep)</td></tr>
         <tr><th>Control Electronics</th><td>Raspberry Pi Pico + DRV8833 motor driver</td></tr>
-        <tr><th>Test Panel Dimensions</th><td>498 mm × 299 mm scaled test bed</td></tr>
-        <tr><th>CAD &amp; Fabrication</th><td>Autodesk Fusion, 3D-printed custom housings &amp; couplers</td></tr>
+        <tr><th>Test Panel Dimensions</th><td>498 mm × 299 mm scaled mock solar panel</td></tr>
+        <tr><th>CAD &amp; Fabrication</th><td>Autodesk Fusion, 3D-printed custom housings</td></tr>
       </table>
 
-      <h2>The Problem</h2>
+      <h2>Design Significance</h2>
       <p>
-        In arid residential regions such as North Africa, heavy dust accumulation significantly degrades photovoltaic power output, while water scarcity makes wet washing impractical. Our team designed a dry, automated morning-cycle brush mechanism capable of full rectangular panel coverage from a single corner mount.
+        In arid residential regions such as North Africa, heavy dust accumulation significantly degrades photovoltaic power output, while water scarcity makes wet washing impractical. Our team designed a dry, automated brush mechanism capable of full rectangular panel coverage from a single side mount.
       </p>
 
       <h2>Mechanical Design &amp; Integration</h2>
       <ul>
-        <li><strong>Simultaneous Polar-Linear Kinematics:</strong> Combined a 180° rotational sweep (MG996R servo) with a telescoping lead-screw extension arm (NEMA 17 stepper + shaft coupler + lead nut) so a soft nylon brush reaches the corners of a rectangular panel.</li>
-        <li><strong>Enclosure &amp; Packaging:</strong> Designed custom multi-part stepper and servo housings in Autodesk Fusion with verified tolerances to protect drive components while minimizing panel shading.</li>
-        <li><strong>Verification &amp; Testing:</strong> Passed 17 of 22 engineering specifications during physical prototype testing, validating coordinated 180° sweep kinematics and achieving 82% particulate removal efficiency.</li>
+        <li><strong>Simultaneous Polar-Linear Kinematics:</strong> Combined a 180° rotational sweep (MG996R servo) with a telescoping lead-screw extension arm (NEMA 17 stepper + shaft coupler + lead nut) so a nylon brush reaches the corners of a rectangular panel.</li>
+        <li><strong>Enclosure &amp; Packaging:</strong> Designed custom multi-part stepper and servo housings in Autodesk Fusion with tolerances and considerations of printer nozzle diameter to protect drive components while minimizing panel shading.</li>
+        <li><strong>Verification &amp; Testing:</strong> Performed proxy testing with the prototype, passed 17 of 22 engineering specifications while validating coordinated 180° sweep kinematics and achieving 82% particulate removal efficiency.</li>
       </ul>
+
+      <h2>CAD Iteration Process</h2>
+      <p>
+        For a more detailed CAD design process with complete iterative design choices, view or download the design process document below:
+      </p>
+      <p>
+        <a class="btn primary" href="../media/solar/cad-process.pdf" target="_blank" rel="noopener">📄 View Solar Brush CAD Design Process (PDF)</a>
+      </p>
 
       <div class="gallery">
         <figure>
-          <div class="thumb placeholder">[ ../images/solar-cad.jpg ]</div>
-          <figcaption>Fig. 1: Autodesk Fusion assembly showing lead-screw &amp; servo housings</figcaption>
+          <div class="thumb"><img src="../media/solar/images/stepper-cad.jpg" alt="Image of the stepper motor housing and brush CAD"></div>
+          <figcaption>Fig. 1: Autodesk Fusion assembly showing stepper housing, brush arm, lead screw &amp; lead nuts</figcaption>
         </figure>
         <figure>
-          <div class="thumb placeholder">[ ../images/solar-proto.jpg ]</div>
-          <figcaption>Fig. 2: Integrated physical prototype on test panel</figcaption>
+          <div class="thumb"><img src="../media/solar/images/servo-cad.jpg" alt="Image of the servo motor housing and theb ase"></div>
+          <figcaption>Fig. 2: Autodesk Fusion assembly of the servo housing and the brush base</figcaption>
         </figure>
       </div>
     </div>
